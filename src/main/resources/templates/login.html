@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>登录页面</title>
+</head>
+<body th:background="@{/login/img/login.jpg}" style="margin:0px;no-repeat;background-attachment:fixed; background-size:100% 100%;">
+<form id="about-dialog-button-bar" th:action="@{/login/check}" method="post" >
+  <div style="padding:28px;">
+
+      <h1>登录</h1>
+      <input type="text" class="form-control"
+             th:placeholder="用户名" name="userName" required="" autofocus=""/>
+      <br>
+      <input type="password" class="form-control"
+             th:placeholder="密码" name="password" required=""/>
+      <br>
+      <input type="submit" th:placeholder="登录" />
+  </div>
+</form>
+</body>
+</html>
