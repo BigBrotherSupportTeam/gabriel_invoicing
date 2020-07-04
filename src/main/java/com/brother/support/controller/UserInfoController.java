@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -35,4 +36,17 @@ public class UserInfoController {
         return "qry_user_detail";
     }
 
+
+
+    @GetMapping("/addUserJump")
+    public String addUserJump(Model model) {
+        model.addAttribute("sss", "111");
+        return "add_user";
+    }
+
+    @PostMapping(value = "/addUser")
+    public String addUser( UserInfo userInfo) {
+        userInfoService.addUserInfo(userInfo);
+        return "main";
+    }
 }

@@ -15,4 +15,5 @@ public interface UserInfoService {
     UserInfo qryUserInfoByUserName(String userName);
 
     List<UserInfo> qryUserInfoList();
+    public void addUserInfo(UserInfo userInfo);
 }

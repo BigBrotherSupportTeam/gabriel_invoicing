@@ -47,6 +47,9 @@ public class UserInfoServiceImpl implements UserInfoService {
         List<UserInfo> userInfos = userInfoMapper.selectByExample(null);
         return userInfos;
     }
-
+    @Override
+    public void addUserInfo(UserInfo userInfo) {
+        userInfoMapper.insert(userInfo);
+    }
 
 }

@@ -40,18 +40,6 @@ public class LoginController {
         return "main";
     }
 
-    @RequestMapping("/addUserJump")
-    public String addUserJump(Model model) {
-        model.addAttribute("sss", "111");
-        return "add_user";
-    }
-
-    @PostMapping(value = "/addUser")
-    public String addUser( UserInfo userInfo) {
-        loginService.addUserInfo(userInfo);
-
-        return "main";
-    }
 
 
 

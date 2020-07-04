@@ -30,8 +30,5 @@ public class LoginServiceImpl implements LoginService {
         return false;
     }
 
-    @Override
-    public void addUserInfo(UserInfo userInfo) {
-        userInfoMapper.insert(userInfo);
-    }
+
 }
