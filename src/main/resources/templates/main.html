@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>主页面</title>
 </head>
 <body>
     <h1>欢迎登录系统页面</h1>
+    <a class="btn btn-sm" th:href="@{/user/qryUserList}">查看用户列表详情</a>
+
+
+
 </body>
 </html>

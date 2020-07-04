@@ -10,4 +10,5 @@ public interface LoginService {
 
     public boolean checkUserInfo(UserInfo userInfo) throws Exception;
 
+    public void addUserInfo(UserInfo userInfo);
 }
