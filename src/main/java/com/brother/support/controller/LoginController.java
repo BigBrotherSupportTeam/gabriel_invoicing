@@ -16,7 +16,7 @@ import java.util.List;
  * @reason
  */
 @Controller
-@RequestMapping("login")
+@RequestMapping("login_info")
 public class LoginController {
     @Autowired
     private LoginService loginService;
