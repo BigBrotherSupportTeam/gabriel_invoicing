@@ -27,7 +27,7 @@ public class LoginServiceImpl implements LoginService {
         if (userInfos == null || userInfos.size()==0) {
             throw new Exception("用户名或密码不存在");
         }
-        return false;
+        return true;
     }
 
 
